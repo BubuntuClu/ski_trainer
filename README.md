@@ -1,24 +1,5 @@
-# README
+Телеграм-бот
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+С помощью этого бота вы можете выбрать тренировочную программу и выполнять задания, входящие в план тренировки.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Используются вебхуки для общения с telegram api, ruby 2.4.0
