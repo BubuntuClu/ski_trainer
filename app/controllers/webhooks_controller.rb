@@ -15,7 +15,7 @@ class WebhooksController < ApplicationController
   end
 
   def from
-    webhook[:edited_message][:from]
+    webhook[:message][:from]
   end
 
   def user
