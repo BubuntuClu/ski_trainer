@@ -8,7 +8,7 @@ class BotMessageDispatcher
   end
 
   def process
-    if user.status == "worked"
+    if user.status == 'worked'
       if typed_text == '/list' || typed_text == '/список'
         BotCommand::PlanList.new(user, message).start
       elsif typed_text == '/done' || typed_text == '/выполнено'
@@ -29,10 +29,8 @@ class BotMessageDispatcher
       BotCommand::Start.new(user, message).start
       BotCommand::Gender.new(user, message).start
     end
-
-    if user.status == "finished"
-      BotCommand::TrainingPlan.new(user, message).start
-    end
+    
+    BotCommand::TrainingPlan.new(user, message).start if user.status == 'finished'
   end
 
   private
